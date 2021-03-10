@@ -14,18 +14,14 @@ const contentSection = document.querySelector('.content-section')
 const contentSectionInverseContent = document.querySelector('.content-section:nth-of-type(2)')
 const introP = document.querySelector('.intro p')
 
-
 introP.addEventListener('focus', (e) => {
     introP.style.backgroundColor='yellow'
-    
 })
 contentSection.addEventListener('mouseup', (e) => {
     contentSection.style.backgroundColor='yellow'
-    
 })
 contentSectionInverseContent.addEventListener('scroll', (e) => {
     contentSectionInverseContent.style.backgroundColor='orange'
-    
 })
 
 welcome.addEventListener('mouseup', (e) => {
@@ -81,6 +77,5 @@ destLocation[2].addEventListener('wheel',(e) =>{
 Array.from(document.links).forEach(function (link) {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      
     });
   });
